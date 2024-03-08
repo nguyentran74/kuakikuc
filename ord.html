@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+</head>
+<body>
+    <center>
+        <header>
+            <a href="index1.html">
+                <img src="sbLogo.png" alt="logo">
+            </a>     
+            <br>
+            <br>
+            <nav>
+                <a href="#product">MENU</a>
+                &nbsp;
+                &nbsp;
+                <a href="#contact">CONTACT</a>
+                &nbsp;
+                &nbsp;
+                <a href="ord.html">ORDER</a>  
+                &nbsp;
+                &nbsp;
+            </nav>
+        </header>
+        <main>
+            <section id="ord" >
+                <h1>Order Form</h1>
+                <form action="form-processing" method="post" id="item-list">
+                    <fieldset>
+                      <legend><strong>PERSONAL INFORMATION</strong></legend>
+                      <label for="fname">First name: </label>
+                      <input type="text" id="fname" name="First name" required>
+                      <br>
+                      <br>
+                      <label for="lname">Last name: </label>
+                      <input type="text" id="lname" name="Last name" required>
+                      <br>
+                      <br>
+                      <label for="dob">Date of birth:</label>
+                      <input type="date" id="dob" name="Date of birth" required>
+                      <br>
+                    </fieldset>
+
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <legend><strong>SHIPPING INFORMATION</strong></legend>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="Address" required>
+                        <br>
+                        <br>
+                        <label for="district">District:</label>
+                        <select name="District" id="district">
+                          <option value="">Select the district</option>
+                          <option value="1">District 1</option>
+                          <option value="2">District 2</option>
+                          <option value="3">District 3</option>
+                        </select>
+            
+                        <br>
+                        <br>
+                        <label for="city">City:</label>
+                        <select name="City" id="city">
+                          <option value="">Select a city</option>
+                          <option value="HCMC">Ho Chi Minh</option>
+                          <option value="Hanoi">Ha Noi</option>
+                          <option value="Da Nang">Da Nang</option>
+                        </select>
+            
+                        <br>
+                        <br>
+                        <label for="phoneNo">Phone Number</label>
+                        <input type="text" id="phoneNo" name="Phone Number" required>
+                      </fieldset>
+                      <br>
+                      <br>
+                      <fieldset>
+                        <legend><strong>ORDERS</strong></legend>
+                        <p><strong>Coffee: </strong></p>
+                        <table>
+                          <tr>
+                            <td>
+                              <input type="checkbox" name="Product" value="Cafe Latte"> Cafe Latte <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Americano"> Americano <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Caramel Machiato"> Caramel Machiato <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Nitro Cold Brew"> Nitro Cold Brew <br>
+                            </td>
+                          </tr>
+                        </table>
+                        <p><strong>Frappuccino®: </strong></p>
+                        <table>
+                          <tr>
+                            <td>
+                              <input type="checkbox" name="Product" value="Caramel Frappuccino®"> Caramel Frappuccino® <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Green Tea Cream Frappuccino®"> Green Tea Cream Frappuccino® <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Strawberry Cream Frappuccino®"> Strawberry Cream Frappuccino® <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Mango Passion Fruit"> Mango Passion Fruit <br>
+                            </td>
+                          </tr>
+                        </table>
+                        <p><strong>Tea: </strong></p>
+                        <table>
+                          <tr>
+                            <td>
+                              <input type="checkbox" name="Product" value="Pink Drink"> Pink Drink <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Pure Matcha Latte"> Pure Matcha Latte <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Honey Ruby Grapefruit Black Tea"> Honey Ruby Grapefruit Black Tea <br>
+                            </td>
+            
+                            <td>
+                              <input type="checkbox" name="Product" value="Earl Grey Tea"> Earl Grey Tea <br>
+                            </td>
+                          </tr>
+                        </table>
+                      </fieldset>
+            
+                      <br>
+                      <br>     
+                        <input type="submit" value="Order Now!">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h4>© Copyright 2023 by Kua</h4>
+        </footer>
+    </center>
+
+</body>
+</html>
